@@ -1,0 +1,14 @@
+.songTitle {
+    font-weight: bold;
+    text-align: center;
+}
+
+.songArtist {
+    font-style: italic;
+    font-size: small;
+    text-align: center;
+}
+
+.listLinks {
+    list-style: none;
+}

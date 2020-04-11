@@ -9,14 +9,11 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Route exact path="/">
-          <NavBar/>
-          <HomePage/>
-        </Route>
-        <Route exact path="/profile">
-          <NavBar/>
-          <UserProfile/>
-        </Route>
+        <NavBar/>
+        <main className="mainView">
+          <Route exact path="/" component={HomePage}/>
+          <Route exact path="/profile" component={UserProfile}/>
+        </main>
       </Router>
     </div>
   );

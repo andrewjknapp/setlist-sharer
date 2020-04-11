@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import "./assets/css/Song.css"
 
 export function Song(props) {
 
@@ -22,16 +23,16 @@ export function Song(props) {
             <p className="songTitle">#{order + 1}: {song.title}</p>
             <p className="songArtist">Artist: {song.artist}</p>
             <p className="songDescription">{song.notes}</p>
+            <hr/>
             <p className="listTitle">Sheet Music Links</p>
-            <ul>
+            <ul className="listLinks">
                 {sheetMusic}
             </ul>  
-            <br/>
+            <hr/>
             <p className="listTitle">Video{videoLinks.length > 1 ? "s" : ""}:</p>
-            <ul>
+            <ul className="listLinks">
                 {videoLinks}
             </ul>
-            <br/>
 
         </Fragment>
             
